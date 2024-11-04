@@ -5,7 +5,8 @@ import NonAuthHomeView from '@/sections/NonAuthHomeView';
 import AuthHomeView from '@/sections/AuthHomeView';
 
 const HomePage: React.FC = () => {
-  const { data: session, status } = useSession();
+  
+  const { data: session, status } =  useSession();
 
   if (status === 'loading') {
     // You can return a loading spinner while session is being fetched
